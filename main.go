@@ -10,5 +10,5 @@ func main() {
 	r.GET("/", func(c *gin.Context) {
 		c.String(http.StatusOK, "Under Reconstruction")
 	})
-	r.Run()
+	r.Run(":80")
 }
